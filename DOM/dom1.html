@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom in Javascript</title>
+</head>
+<body>
+    <!-- id -->
+    <p id="one"><span>hello</span>Namaste</p>
+    <!-- class -->
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+        <!-- tagname -->
+        <h4>hola</h4>
+        <h4>worls</h4>
+        <h4>hi</h4>
+        <h2>Hello</h2>
+        <h2 class="class">Avadhesh</h2>
+        <h2 id="ids">Hey</h2>
+        
+    </ul>
+   <script>
+        //<!-- id -->
+        let var1 =document.getElementById("one");
+        console.log(var1.innerText);
+        let var2=document.getElementsByClassName("tech");
+        console.log(var2[2].innerHTML);
+         let var3=var2[2].innerHTML="node js";
+         console.log(var3);
+         let var4=document.getElementsByTagName("h4");
+         console.log(var4[0].innerText);
+         var4[2].innerText="Hello Pw Skills"; 
+         console.log(var4[2].innerText)
+         var4[2].style.color="red";
+          
+         //   querySelector ....
+
+         let var5=document.querySelector(".class");
+         console.log(var5);
+         //var5.className="avad";
+        //var5.classList="hey, abhi,helo";
+        var5.setAttribute("title","Avadhesh inbuild")
+     
+
+         
+
+    </script>
+</body>
+</html>

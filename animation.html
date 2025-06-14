@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            animation-name: colorchange;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            text-align: center;
+            text-transform: capitalize;
+            animation-fill-mode: backwards;
+        }
+
+        #ease{
+            animation-timing-function: ease;
+        }
+        #linear{
+            animation-timing-function: linear;
+        }
+        #ease-in{
+            animation-timing-function: ease-in;
+        }
+        #ease-out{
+            animation-timing-function: ease-out;
+        }
+        @keyframes colorchange{
+            0%{
+                background-color: red;
+                top: 0px;
+                left: 0px;
+            }
+            25%{background-color: rgb(255, 255, 0);
+            top: 0px;
+            left: 200px;
+             }
+            50%{background-color: rgb(98, 0, 255);
+            top: 200px;
+            left: 200px;
+          }
+          75%{background-color: rgb(255, 0, 98);
+            top: 200px;
+            left: 0px;
+        } 
+        100%{background-color: rgb(136, 136, 114);
+            top: 0px;
+            left: 0px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: green;">
+
+    </div>
+    <div id="ease"> ease</div>
+    <div id="linear " style="background-color: black;">linear</div>
+    <div id="ease-in" style="background-color: darkkhaki;">ease-in </div>
+    <div id="ease-out">ease-out</div>
+    <p>This is going to animation</p>
+</body>
+</html>

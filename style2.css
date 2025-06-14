@@ -1,0 +1,35 @@
+/* universal selecter */
+*{
+margin: 0;
+padding: 0;
+
+}
+/* element selector */
+.pra{
+color: grey; 
+background-color: rgb(230, 148, 148);   
+
+}
+h1{
+ 
+ text-align: center;
+    color: aqua;
+}
+.hel{
+    color: blueviolet;
+    background-color: 
+    hsl(0, 3%, 8%);
+    font-size: 40px;
+}
+#hello{
+    background-color: red;
+    color: bisque;
+    font-size: 30px;
+}
+/* list selector */
+.x,.y,#k{
+background-color: yellow;
+border: 1px dotted black;
+color: rgb(143, 61, 14);
+
+}

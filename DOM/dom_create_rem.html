@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create & delete by dom</title>
+</head>
+<body>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <script>
+
+        // Append child in javascript
+        let title=document.createElement("h1");
+        title.className="Pwskills";
+        title.style.color="green";
+        title.textContent="Hay ! i am Avadhesh";
+        console.log(title);
+        document.body.appendChild(title);
+        //remove child
+        let uls=document.querySelector("ul");
+        console.log(uls);
+        
+        let list=document.querySelectorAll("li");
+        console.log(list);
+      
+        for(lists of list){
+            uls.removeChild(lists);// remove child
+        }
+    </script>
+</body>
+</html>

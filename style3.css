@@ -1,0 +1,25 @@
+/* body{
+    background-color: aquamarine;
+    color:  black;
+} */
+
+main p{
+color:  red;
+}
+h1>p{
+    background-color: yellowgreen;
+    color: brown;
+}
+section+p{
+    background-color: blueviolet;
+    font-size: 23px;
+}
+section ~ p{
+    color: aqua;
+    border: 1px solid red;
+}
+[target="_blank"]{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(204, 4, 114);
+}

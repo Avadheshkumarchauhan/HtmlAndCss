@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        form{
+            background-color: #fff;
+            text-align: left;
+        }
+        .button{
+            background:aquamarine;
+            color:red;
+            border-radius: 8px;
+
+        }
+    </style>
+</head>
+<body>
+    <form method="post" target="_blank" action="###">
+        <fieldset>
+            <legend>User details ! </legend>
+        <label for="name">Name :  </label>
+            <input type="text" id="name" placeholder="Enter name" autofocus>
+        <br/>
+        <label for="email">Email : </label>
+            <input type="email" id="email" name="email" placeholder="xyz@gmail.com" autofocus>
+        <br/>
+        <label for="dob" >DOB : </label>
+            <input type="date" id ="dob" name="dob">
+        <br/>
+        <label for="password">Password : </label>
+            <input type="password" name="password" id ="password" placeholder="Enter password">
+        <br/>
+        <label for="addresh">Addresh : </label>
+        <textarea name="addresh" id="addresh" placeholder="Enter addresh"></textarea>
+    <br/>
+        Gender : 
+        <label for="male " >Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+        
+        <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        
+        <label for="transgender">Other </label>
+            <input type="radio" name="gender" id="transgender" value="transgender">
+        <br/>
+        Select Hobies : 
+        <br/>
+        <label for="read">Reading</label>
+            <input type="checkbox" name="read" id="read" value="reading">
+        <label for="cricket">Cricket</label>
+            <input type="checkbox" name="cricket" id="cricket" value="cricket">
+        <label for="movie">Movie</label>
+            <input type="checkbox" name="movie" id="movie" value="movie">
+        <br/>
+        <br/>
+        <label for="submit"></label>
+        <input class="button" type="submit" id ="submit" name="submit">
+        </fieldset>
+
+    </form>
+</body>
+</html>

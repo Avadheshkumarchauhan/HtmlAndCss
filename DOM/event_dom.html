@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Enent dom</title>
+</head>
+<body>
+    <h1>Hello bacho kya hal chal hai </h1>
+    <p id="js"></p>
+    <button onclick="hey()" id="button">submit</button>
+    <script>
+        document.addEventListener("dblclick",hello);
+        function hello(){
+            document.getElementById("js").innerText="Namaste bacho ";
+
+        }
+        function hey(){
+            let s=document.getElementById("button");
+            s.innerText="Ok";
+            s.style.color="red";
+            s.style.backgroundColor="yellow";
+            s.style.fontSize="25px";
+
+
+
+        }
+    </script>
+</body>
+</html>

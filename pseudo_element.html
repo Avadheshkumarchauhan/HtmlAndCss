@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element</title>
+    <style>
+        .hel::first-letter{
+            background-color: #808080;
+            color: red;
+            
+        }
+        .hel::first-line{
+            background-color: yellow;
+            color: aqua;
+        }
+        .hel::after{
+            color: rgb(231, 120, 15);
+            content: "End ......";
+        }
+        .hel::before{
+            background-color: aquamarine;
+            color: bisque;
+            content: "    Hay        ";
+        }
+        .hel::selection{
+            background-color: black;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <p class="hel" style="text-indent: 25px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptate in optio animi, excepturi labore non ab laborum aspernatur quasi dolor, ad aliquam natus expedita ipsam similique, maiores laboriosam amet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fuga in ex! Doloribus cumque nemo qui corrupti unde nulla libero assumenda id ullam dolor suscipit aspernatur us iste nihil, consequuntur harum necessitatibus, provident labore a similique soluta laborum rem maxime. Odio ipsa exercitationem incidunt quia dolor corrupti rerum!</p>
+</body>
+</html>

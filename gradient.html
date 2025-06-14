@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gredient | css</title>
+    <style>
+        .grad{
+            height: 1000px;
+            width: 1000px;
+            background-image: linear-gradient(to right, red ,orange ,yellow, green,blue);
+        }
+        .gradc{
+            height: 1000px;
+            width: 1000px;
+            background-image:repeating-radial-gradient(
+                red 10%,orange 20%,yellow 25%,green 10%,blue 20% 
+                );
+        }
+        .grad1{
+            height: 1000px;
+            width: 1000px;
+            background-image:conic-gradient(red 150deg,yellow ,rgb(43, 35, 35));
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+    <hr/>
+    <div class="gradc"></div>
+    <hr/>
+    <div class="grad1"></div>
+</body>
+</html>
