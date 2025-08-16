@@ -1,5 +1,5 @@
 try{
-x=undefined;
+let x=undefined;
 console.log(x[0]);
 
 }
