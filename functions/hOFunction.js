@@ -12,7 +12,7 @@ const powerTwo1 = n =>n**2;
 
 const powerCube1 = (powerTwo1,n) =>powerTwo1(n)*n;
 
-console.log(powerCube1(5));
+console.log(powerCube1(powerTwo1,5));
 
 
 function sayHellow(){
