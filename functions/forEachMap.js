@@ -40,13 +40,16 @@ console.log("Even number : ",even);
 let sumOfArray = arr1.reduce((prev,cur)=>prev+cur,0);
 console.log("Sum of array element : ",sumOfArray);
 
-
-let checkNumber = arr.every((v)=> typeof v==="Number".toLowerCase());
+let type ="Number";
+let checkNumber = arr.every((v)=> typeof v===type.toLowerCase());
 console.log("Check : ",checkNumber);
 
 
 let findvalue = arr1.find((n) =>n>6);
 console.log(findvalue);
 
-let shorArray = arr1.sort((a,b)=>a-b);
-console.log(shorArray);
+let shorArray = arr1.sort((a,b)=>b-a);
+console.log("Sort array desc : ",shorArray);
+
+let shorArray1 = arr1.sort((a,b)=>a-b);
+console.log("Sort array asc : ",shorArray1);
