@@ -10,7 +10,7 @@ console.log(powerCube(3));
 
 const powerTwo1 = n =>n**2;
 
-const powerCube1 = (n) =>powerTwo1(n)*n;
+const powerCube1 = (powerTwo1,n) =>powerTwo1(n)*n;
 
 console.log(powerCube1(5));
 
